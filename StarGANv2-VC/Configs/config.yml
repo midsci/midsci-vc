@@ -1,6 +1,6 @@
 log_dir: "Models/Original"
-save_freq: 2
-device: "cpu"
+save_freq: 10
+device: "cuda"
 epochs: 150
 batch_size: 5
 pretrained_model: ""
@@ -15,7 +15,7 @@ ASR_config: "Utils/ASR/config.yml"
 ASR_path: "Utils/ASR/epoch_00100.pth"
 
 preprocess_params:
-  sr: 44100
+  sr: 24000
   spect_params:
     n_fft: 2048
     win_length: 1200
